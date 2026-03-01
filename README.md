@@ -1,65 +1,85 @@
-# angular-react-error-sound README
+# Error Sound on Save
 
-This is the README for your extension "angular-react-error-sound". After writing up a brief description, we recommend including the following sections.
+Never miss an error again! 🎵
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+**Error Sound on Save** plays a sound whenever you save a file in VS Code and errors are detected. It works with **Angular, React, JavaScript, TypeScript, Python**, and any language that provides diagnostics.
 
 ---
 
-## Working with Markdown
+## ⚡ Features
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+- Plays a sound **only after saving** a file with errors.
+- Supports **Angular, React, JS/TS, Python**, and more.
+- Choose a sound from the extension’s **media folder**.
+- Default sound included if no custom selection is made.
+- Lightweight, easy to install, and no extra configuration required.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+---
 
-## For more information
+## 🎵 How to Use
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+1. Install the extension.
+2. Open your file (Angular, React, Python, JS/TS, etc.)
+3. Save the file (`Ctrl+S` / `Cmd+S`)
+4. If errors exist, your selected sound will play.
 
-**Enjoy!**
+---
+
+## 📂 Media Folder
+
+Include `.wav` files in the `media` folder. You can add more sounds but update the dropdown in `package.json`.
+
+## 🎵 Media Folder Sounds
+
+The extension includes multiple audio files in the `media` folder:
+
+- `meow-ghoop-ghopp.wav`
+- `faaah.wav`
+- `anime-ahh.wav`
+- `kya-cheda-bhosdi.wav`
+- `aayein-meme.wav`
+- `le-beta.wav`
+- `shocked-sound-effect.wav`
+- `khatam-rahul-gandhi.wav`
+- `meri-jung-emotional.wav`
+- `dry-fart.wav`
+
+You can choose your preferred sound from **Settings → Error Sound → Selected Sound**.
+
+---
+
+## ⚙️ Settings
+
+| Setting                    | Type   | Default                | Description                                                               |
+| -------------------------- | ------ | ---------------------- | ------------------------------------------------------------------------- |
+| `errorSound.selectedSound` | string | `meow-ghoop-ghopp.wav` | Select error sound from media folder (`media/meow-ghoop-ghopp.wav`, etc.) |
+
+**How to change:**
+
+1. Open **VS Code Extension Development Host**.
+2. Go to: `File → Preferences → Settings`
+3. Search for `Error Sound`.
+4. Select your favorite audio from the dropdown.
+
+---
+
+## 🖥 Installation
+
+### From VSIX (manual)
+
+1. Download the `.vsix` file from GitHub releases.
+2. Open VS Code → Extensions → `...` → **Install from VSIX**.
+3. Select your downloaded file.
+4. Reload VS Code.
+
+### From GitHub
+
+```bash
+git clone https://github.com/Slytherin001/AngularReactErrorSoundExtension
+cd angular-react-error-sound
+code .
+```
+
+## 📄 License
+
+MIT License © [MD KAIF ALI]

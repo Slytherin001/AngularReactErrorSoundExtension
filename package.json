@@ -1,15 +1,20 @@
 {
   "name": "angular-react-error-sound",
-  "displayName": "angular-react-error-sound",
-  "description": "Play sound when you will get any error while writing angular or react code",
+  "displayName": "Error Sound Support For All Coding Languages (REACT, ANGULAR, JAVASCRIPT, TYPESCRIPT, PYTHON and More)",
+  "description": "Play a sound on saving files if errors exist. Supports JavaScript, TypeScript, Angular, React, Python, and more.",
   "publisher": "MdKaifAli",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.109.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slytherin001/AngularReactErrorSoundExtension.git"
+  },
   "categories": [
     "Other"
   ],
+  "icon": "angular-error.png",
   "activationEvents": [
     "*"
   ],
@@ -31,7 +36,8 @@
             "shocked-sound-effect.wav",
             "khatam-rahul-gandhi.wav",
             "meri-jung-emotional.wav",
-            "dry-fart.wav"
+            "dry-fart.wav",
+            "eww-brother-eww"
           ],
           "description": "Select error sound from media folder"
         }
@@ -44,11 +50,14 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.109.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
-    "eslint": "^9.39.3",
+    "@types/vscode": "^1.109.0",
     "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.7.1"
   }
 }
