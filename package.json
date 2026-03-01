@@ -1,0 +1,54 @@
+{
+  "name": "angular-react-error-sound",
+  "displayName": "angular-react-error-sound",
+  "description": "Play sound when you will get any error while writing angular or react code",
+  "publisher": "MdKaifAli",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Error Sound Settings",
+      "properties": {
+        "errorSound.selectedSound": {
+          "type": "string",
+          "default": "meow-ghoop-ghopp.wav",
+          "enum": [
+            "meow-ghoop-ghopp.wav",
+            "faaah.wav",
+            "anime-ahh.wav",
+            "kya-cheda-bhosdi.wav",
+            "aayein-meme.wav",
+            "le-beta.wav",
+            "shocked-sound-effect.wav",
+            "khatam-rahul-gandhi.wav",
+            "meri-jung-emotional.wav",
+            "dry-fart.wav"
+          ],
+          "description": "Select error sound from media folder"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
