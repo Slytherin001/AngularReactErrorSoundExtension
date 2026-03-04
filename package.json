@@ -3,7 +3,7 @@
   "displayName": "Error Sound Support For All Coding Languages (REACT, ANGULAR, JAVASCRIPT, TYPESCRIPT, PYTHON and More)",
   "description": "Play a sound on saving files if errors exist. Supports JavaScript, TypeScript, Angular, React, Python, and more.",
   "publisher": "MdKaifAli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.109.0"
   },
