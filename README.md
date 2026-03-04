@@ -36,13 +36,15 @@ The extension includes multiple audio files in the `media` folder:
 - `meow-ghoop-ghopp.wav`
 - `faaah.wav`
 - `anime-ahh.wav`
-- `kya-cheda-bhosdi.wav`
+- `kya-cheda.wav`
 - `aayein-meme.wav`
 - `le-beta.wav`
 - `shocked-sound-effect.wav`
 - `khatam-rahul-gandhi.wav`
 - `meri-jung-emotional.wav`
 - `dry-fart.wav`
+- `eww-brother-eww.wav` 
+- `aag.wav` 
 
 You can choose your preferred sound from **Settings → Error Sound → Selected Sound**.
 
